@@ -1,0 +1,29 @@
+$primary-color: blueviolet;
+
+.formContent {
+  width: 100%;
+  font-size: 1.4em;
+  padding: .8em;
+  font-family: 'Source Sans Pro', sans-serif;
+  min-height: 6em;
+  border: 2px solid #6D6D6D;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.formButton {
+  
+  background-color: $primary-color;
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
+  padding: .8em 1.5em;
+  font-size: 1.1em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($primary-color, 10%);
+  }
+
+}
