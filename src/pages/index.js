@@ -11,12 +11,6 @@ export default function Home({ posts: defaultPosts }) {
 
   const [ posts, updatePosts] = useState(defaultPosts)
   
-  // useEffect(async () => {
-  //   const response = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/api/posts`)
-  //   const { posts } = await response.json()
-  //   updatePosts(posts)
-  // }, [])
-
   const postsSorted = posts.sort((a,b) => new Date(b.date) - new Date(a.date))
   
   const { user, logIn, logOut } = useAuth()
